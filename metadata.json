@@ -1,0 +1,7 @@
+{
+  "name": " Vogue Editorial AI Studio",
+  "description": "Transform your portrait into a high-fashion cinematic editorial with dynamic motion blur and sun-drenched lighting.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
