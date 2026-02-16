@@ -71,9 +71,14 @@ const STYLES: StyleOption[] = [
   // 5. Vintage Film Looks
   { id: 'v_kodak', name: 'Kodachrome 64', category: 'Vintage', description: 'Deep saturated reds, rich contrast, and classic 20th-century color chemistry.', visual: 'bg-gradient-to-tr from-red-700 via-orange-600 to-yellow-400' },
   { id: 'v_ekta', name: 'Ektachrome 100', category: 'Vintage', description: 'Neutral skin tones with cool, crisp blue-green highlights. Professional slide film.', visual: 'bg-gradient-to-br from-blue-600 via-zinc-300 to-white' },
+  { id: 'v_portra', name: 'Portra 400', category: 'Vintage', description: 'The gold standard for fashion. Soft, natural skin tones with a beautiful pastel color palette.', visual: 'bg-gradient-to-tr from-orange-200 via-rose-100 to-teal-50' },
   { id: 'v_polar', name: 'Polaroid 600', category: 'Vintage', description: 'Soft highlights, warm shadows, iconic instant-film haze, and high-key nostalgia.', visual: 'bg-gradient-to-tr from-stone-400 via-amber-100 to-zinc-50' },
+  { id: 'v_agfa', name: 'Agfa Vista 200', category: 'Vintage', description: 'Vivid reds and punchy, warm everyday colors with a distinct nostalgic consumer-film feel.', visual: 'bg-gradient-to-br from-red-500 via-yellow-200 to-white' },
+  { id: 'v_cine', name: 'Cinestill 800T', category: 'Vintage', description: 'Cinematic night-time look with tungsten balance and the iconic red halation glow around light sources.', visual: 'bg-gradient-to-br from-indigo-900 via-blue-700 to-red-600' },
   { id: 'v_fuji', name: 'Fuji Velvia', category: 'Vintage', description: 'Vibrant landscape colors, intense greens/magentas, and heavy shadow saturation.', visual: 'bg-gradient-to-tr from-emerald-600 via-rose-500 to-amber-200' },
   { id: 'v_tri', name: 'Tri-X 400', category: 'Vintage', description: 'Timeless black and white with beautiful silver-halide grain and punchy contrast.', visual: 'bg-gradient-to-b from-zinc-200 via-zinc-800 to-black' },
+  { id: 'v_ilford', name: 'Ilford HP5', category: 'Vintage', description: 'Classic fine-grain black and white with smooth grey tones and moderate editorial contrast.', visual: 'bg-gradient-to-t from-zinc-900 to-zinc-100' },
+  { id: 'v_lomo', name: 'Lomochrome Purple', category: 'Vintage', description: 'Surreal and experimental. Shifts greens to deep purples while keeping skin tones recognizable.', visual: 'bg-gradient-to-tr from-purple-800 via-fuchsia-600 to-indigo-900' },
 
   // 6. Backgrounds
   { id: 'bg_mount', name: 'Mountain Escape', category: 'Background', description: 'Snowy peaks, vast horizon, majestic wilderness.', visual: 'bg-gradient-to-t from-slate-400 to-white' },
@@ -121,7 +126,7 @@ const StyleSelector: React.FC<Props> = ({ selectedId, onSelect, disabled }) => {
         ))}
       </div>
 
-      <div className="flex overflow-x-auto pb-4 gap-3 no-scrollbar scroll-smooth">
+      <div className="flex overflow-x-auto pb-4 gap-3 custom-scrollbar scroll-smooth">
         {filteredStyles.map((style) => (
           <button
             key={style.id}
