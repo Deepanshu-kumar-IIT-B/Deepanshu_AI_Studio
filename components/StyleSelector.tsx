@@ -67,6 +67,8 @@ const STYLES: StyleOption[] = [
   { id: 'cr_3d', name: '3D Pop Portrait', category: 'Creative', description: 'Pixar-style 3D rendered character aesthetic.', visual: 'bg-gradient-to-br from-sky-400 to-blue-600' },
   { id: 'cr_hologram', name: 'Hologram Effect', category: 'Creative', description: 'Flickering blue light, digital scan lines.', visual: 'bg-gradient-to-b from-cyan-400 via-blue-500 to-black' },
   { id: 'cr_aura', name: 'Dream Aura', category: 'Creative', description: 'Glowing silhouette, ethereal light particles.', visual: 'bg-gradient-to-tr from-purple-200 via-pink-100 to-white' },
+  { id: 'cr_vaporwave', name: 'Vaporwave Glitch', category: 'Creative', description: 'Retro-digital aesthetic with sun-bleached pinks, purples, and nostalgic computer graphics.', visual: 'bg-gradient-to-tr from-pink-400 via-purple-400 to-cyan-300' },
+  { id: 'cr_glitch_core', name: 'Glitchcore Distortion', category: 'Creative', description: 'Chaotic digital distortion, data-mosh artifacts, and chromatic aberration.', visual: 'bg-gradient-to-tr from-red-500 via-green-500 to-blue-500 opacity-60' },
 
   // 5. Vintage Film Looks
   { id: 'v_kodak', name: 'Kodachrome 64', category: 'Vintage', description: 'Deep saturated reds, rich contrast, and classic 20th-century color chemistry.', visual: 'bg-gradient-to-tr from-red-700 via-orange-600 to-yellow-400' },
@@ -79,6 +81,9 @@ const STYLES: StyleOption[] = [
   { id: 'v_tri', name: 'Tri-X 400', category: 'Vintage', description: 'Timeless black and white with beautiful silver-halide grain and punchy contrast.', visual: 'bg-gradient-to-b from-zinc-200 via-zinc-800 to-black' },
   { id: 'v_ilford', name: 'Ilford HP5', category: 'Vintage', description: 'Classic fine-grain black and white with smooth grey tones and moderate editorial contrast.', visual: 'bg-gradient-to-t from-zinc-900 to-zinc-100' },
   { id: 'v_lomo', name: 'Lomochrome Purple', category: 'Vintage', description: 'Surreal and experimental. Shifts greens to deep purples while keeping skin tones recognizable.', visual: 'bg-gradient-to-tr from-purple-800 via-fuchsia-600 to-indigo-900' },
+  { id: 'v_technicolor', name: 'Technicolor Process 4', category: 'Vintage', description: 'Vibrant 1950s Hollywood saturation and legendary three-strip color separation.', visual: 'bg-gradient-to-tr from-red-600 via-green-600 to-blue-600' },
+  { id: 'v_daguerreo', name: 'Daguerreotype', category: 'Vintage', description: 'Mirror-like silver plate monochrome from the 1840s with sharp details and metallic sheen.', visual: 'bg-gradient-to-br from-zinc-300 via-zinc-500 to-zinc-200' },
+  { id: 'v_ektar', name: 'Kodak Ektar 100', category: 'Vintage', description: "World's finest grain and super-vivid color saturation for ultra-sharp editorial clarity.", visual: 'bg-gradient-to-tr from-orange-400 via-red-500 to-blue-500' },
 
   // 6. Backgrounds
   { id: 'bg_mount', name: 'Mountain Escape', category: 'Background', description: 'Snowy peaks, vast horizon, majestic wilderness.', visual: 'bg-gradient-to-t from-slate-400 to-white' },
