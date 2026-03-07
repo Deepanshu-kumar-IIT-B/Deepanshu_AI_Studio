@@ -5,6 +5,7 @@ import ImageUploader from './components/ImageUploader';
 import StyleSelector, { StyleOption } from './components/StyleSelector';
 import ComparisonView from './components/ComparisonView';
 import FineTuneControls from './components/FineTuneControls';
+import PresetManager from './components/PresetManager';
 import { generateFashionPortrait, editImageWithPrompt, generateNewImage, analyzeImage, AspectRatio, FineTuneParams } from './services/api_service';
 
 type AppTab = 'enhance' | 'create';
@@ -290,6 +291,16 @@ const App: React.FC = () => {
                       </p>
                     </div>
                   )}
+
+                  <PresetManager 
+                    currentStyle={selectedStyle}
+                    currentFineTune={fineTuneParams}
+                    onApply={(style, fineTune) => {
+                      setSelectedStyle(style);
+                      setFineTuneParams(fineTune);
+                    }}
+                    disabled={isGenerating}
+                  />
 
                   <StyleSelector 
                     selectedId={selectedStyle?.id || ''} 
